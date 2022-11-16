@@ -32,7 +32,7 @@ class HandleCollisionsAction(Action):
             self._handle_game_over(cast)
 
     def _handle_snake_growth(self, cast):
-        """Updates the score nd moves the food if the snake collides with the food.
+        """Updates the snakes growth
         
         Args:
             cast (Cast): The cast of Actors in the game.
