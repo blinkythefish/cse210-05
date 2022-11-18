@@ -40,10 +40,15 @@ class HandleCollisionsAction(Action):
         snake = cast.get_first_actor("snakes")
         #head = snake.get_head()
         snake2 = cast.get_first_actor("snake2")
+        score1 = cast.get_first_actor("scores")
+        score2 = cast.get_first_actor("score2")
 
         # if growth_rate == 1:
         snake.grow_tail(1)
         snake2.grow_tail(1)
+        
+        score1.add_points(1)
+        score2.add_points(1)
     
     def _handle_segment_collision(self, cast):
         """Sets the game over flag if the snake collides with one of its segments.
