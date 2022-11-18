@@ -24,14 +24,5 @@ class Score(Actor):
             points (int): The points to add.
         """
         self._points += points
-<<<<<<< HEAD
-        self.set_text(f"Score: {self._points}")
-        
-    def reset_points(self):
-        '''
-            resets the players points
-        '''
-        self._points = 0
-=======
         self.set_text(f"Player 1: {self._points}")
->>>>>>> f8742ae41fe9cba273431b13b1424a468f935bf7
+        
