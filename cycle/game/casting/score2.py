@@ -17,7 +17,7 @@ class Score2 (Actor):
         self._text = ""
         self._font_size = 15
         self._color = Color(255, 255, 255)
-        self._position = Point(820, 0)
+        self._position = Point(810, 0)
         self._velocity = Point(0, 0)
         self._points = 0
         self.add_points(0)
