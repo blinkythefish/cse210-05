@@ -17,7 +17,7 @@ class Score2 (Actor):
         self._text = ""
         self._font_size = 15
         self._color = Color(255, 255, 255)
-        self._position = Point(820, 0)
+        self._position = Point(810, 0)
         self._velocity = Point(0, 0)
         self._points = 0
         self.add_points(0)
@@ -30,6 +30,7 @@ class Score2 (Actor):
         """
         self._points += points
         self.set_text(f"Player 2: {self._points}")
+<<<<<<< HEAD
         
     
     def reset_points(self):
@@ -37,3 +38,5 @@ class Score2 (Actor):
             resets the players points
         '''
         self._points = 0
+=======
+>>>>>>> f8742ae41fe9cba273431b13b1424a468f935bf7
