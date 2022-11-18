@@ -3,6 +3,7 @@ import constants
 from game.casting.cast import Cast
 from game.casting.score import Score
 from game.casting.score2 import Score2
+from game.casting.food import Food
 from game.casting.snake import Snake
 from game.casting.snake2 import Snake2
 from game.scripting.script import Script
@@ -21,7 +22,7 @@ def main():
     
     # create the cast
     cast = Cast()
-    #cast.add_actor("foods", Food())
+    cast.add_actor("foods", Food())
     cast.add_actor("snakes", Snake())
     cast.add_actor("snake2", Snake2())
     cast.add_actor("scores", Score())
